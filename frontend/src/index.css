@@ -1,0 +1,14 @@
+.wpi {
+  border: green;
+}
+@font-face {
+  font-family: "Sansation";
+  font-style: normal;
+  src: url("/fonts/Sansation_Regular.ttf");
+}
+@font-face {
+  font-family: "Sansation";
+  font-style: bold;
+  src: url("/fonts/Sansation_Bold.ttf");
+}
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
