@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.allLive {
+  height: 92vh;
+  background-color: white;
+  width: 350px;
+  font-family: "Sansation";
+  position: sticky;
+  top: 8vh;
+  display: flex;
+  flex-direction: column;
+  .liveTitle {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: $mainColor;
+    color: white;
+    font-weight: bold;
+  }
+  .liveContent {
+    overflow: scroll;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 739px), (max-device-width: 739px) {
+  .allLive {
+    display: none;
+  }
+}

@@ -1,0 +1,58 @@
+@import "../variables";
+
+.ContainerEditProfile {
+  color: white;
+  background-color: rgba(rgb(34, 34, 34), 0.6);
+  font-family: $mainFontFamily;
+  height: 92vh;
+  .editNav {
+    height: 10%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    li {
+      height: 60%;
+      width: 20%;
+      margin: auto;
+      border: 4px solid purple;
+      border-radius: 15px;
+      a {
+        width: 100%;
+        height: 100%;
+        background: rgba(rgb(81, 51, 90), 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 2em;
+        color: white;
+        border-radius: 11px;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: white;
+      }
+    }
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+    height: 8%;
+    button {
+      width: 20%;
+      height: 70%;
+      margin: auto;
+      font-size: larger;
+      text-align: center;
+      border-radius: 12px;
+      transition-duration: 0.4s;
+    }
+    button:hover {
+      background-color: $mainColor;
+      color: white;
+    }
+  }
+}

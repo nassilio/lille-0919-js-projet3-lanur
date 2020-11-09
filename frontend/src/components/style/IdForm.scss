@@ -1,0 +1,166 @@
+@import "./variables";
+
+.formulaire-appear {
+  opacity: 0.01;
+}
+
+.formulaire-appear.formulaire-appear-active {
+  opacity: 1;
+  transition: opacity 1.5s ease-in;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .introText {
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1vh;
+  }
+  .form {
+    border: 10px solid $mainColor;
+    border-radius: 15px;
+    background-color: rgba($color: #222222, $alpha: 0.8);
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    position: relative;
+
+    .buttonContainer {
+      display: flex;
+      bottom: 5vh;
+      position: absolute;
+      left: 30vw;
+
+      .previous {
+        position: absolute;
+        margin-top: 10px;
+      }
+
+      .validate {
+        position: absolute;
+        margin-top: 10px;
+        left: 300px;
+      }
+    }
+
+    .inputContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 70vw;
+      margin-top: 2%;
+      margin-bottom: 2%;
+
+      .label {
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+      }
+      .idInput {
+        width: 65%;
+        margin-right: 5%;
+      }
+      .error {
+        width: 65%;
+        margin-right: 5%;
+        border-radius: 8%;
+        padding: 1px;
+        border: solid red;
+        border-width: 5px 7px;
+      }
+
+      .idTextarea {
+        width: 80%;
+        border-radius: 4%;
+        margin-right: 5%;
+      }
+
+      .idSelect {
+        width: 66%;
+        margin-right: 5%;
+      }
+
+      .labelTextarea {
+        margin: 8%;
+      }
+    }
+  }
+
+  button {
+    flex-direction: row;
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    color: white;
+    background-color: $mainColor;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: white;
+    color: $mainColor;
+  }
+}
+
+@media (max-device-width: 1100px) and (min-device-width: 700px) {
+  .idSelect {
+    width: 67%;
+  }
+  .formContainer {
+    .form {
+      .buttonContainer {
+        left: 20vw;
+      }
+    }
+  }
+}
+
+@media (max-device-width: 700px) and (min-device-width: 500px) {
+  .idSelect {
+    width: 68%;
+  }
+
+  .form {
+    height: 60vh;
+  }
+
+  .formContainer {
+    .form {
+      .buttonContainer {
+        left: 20vw;
+      }
+    }
+  }
+}
+
+@media (max-device-width: 500px) {
+  .idSelect {
+    width: 69%;
+  }
+
+  .form {
+    height: 60vh;
+  }
+
+  .formContainer {
+    .form {
+      .buttonContainer {
+        left: 20vw;
+      }
+    }
+  }
+}

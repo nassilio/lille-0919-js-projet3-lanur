@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Sansation";
+  src: url("/Sansation_Regular.ttf");
+}
+$mainColor: #8d20ae;
+.main-NewsFeed {
+  background-color: rgb(39, 39, 39);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  .feed {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.endPageContainer {
+  width: 70vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .endPage {
+    font-size: 1.3em;
+    padding: auto;
+    font-family: "Sansation";
+    background-color: white;
+    color: black;
+    width: 70%;
+    min-width: 350px;
+    max-width: 700px;
+    height: 100px;
+    border: $mainColor solid;
+    border-radius: 5px;
+    margin-left: 8vw;
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}

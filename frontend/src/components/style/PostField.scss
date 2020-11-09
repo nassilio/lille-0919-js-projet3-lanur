@@ -1,0 +1,97 @@
+@import "./variables";
+
+.postFieldContainer {
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.preview-container {
+  width: 100%;
+  background-color: $mainColor;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Sansation";
+  padding-top: 10px;
+  .preview-text {
+    width: 70%;
+  }
+}
+
+.postField {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Sansation";
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: auto;
+  // min-width: 350px;
+  // max-width: 700px;
+  border: $mainColor solid;
+  border-radius: 5px;
+  // margin-left: 8vw;
+  // margin: 20px;
+  .avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60px;
+  }
+  .avatarImg {
+    width: 50px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    textarea {
+      resize: none;
+      width: 90%;
+      height: 10vh;
+      margin: 10px;
+      min-height: 100px;
+      overflow: scroll;
+    }
+    input {
+      margin: 10px;
+    }
+    p {
+      margin: 10px;
+    }
+
+    .gameSelection {
+      flex-direction: row;
+      select {
+        margin-left: 10px;
+      }
+    }
+  }
+  button {
+    color: white;
+    background-color: $mainColor;
+    height: 30px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: center;
+  }
+  button:hover {
+    background-color: white;
+    color: $mainColor;
+    border: solid 5px;
+    border-color: $mainColor;
+    cursor: pointer;
+  }
+}

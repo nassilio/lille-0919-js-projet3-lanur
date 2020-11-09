@@ -1,0 +1,128 @@
+@import "./variables";
+
+.SignIn {
+  background: url("/lolworlds.jpg") bottom right / cover no-repeat;
+  height: 92vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  font-family: $mainFontFamily;
+  font-style: normal;
+  font-weight: 800;
+  color: white;
+  span {
+    color: $mainColor;
+  }
+  .catchPhrase {
+    color: black;
+    padding: 10px 10px 10px 7px;
+    border-radius: 10px;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    line-height: 65px;
+    h1 {
+      font-size: 4em;
+    }
+    h2 {
+      font-size: 3em;
+    }
+  }
+  .connect {
+    margin-bottom: 50px;
+    width: 25%;
+    min-width: 430px;
+    border-radius: 7px;
+    background-color: rgba($color: #ffffff, $alpha: 0.6);
+    padding: 1%;
+    > h2,
+    > h3 {
+      text-align: center;
+      color: black;
+    }
+    form,
+    .noAccount {
+      display: flex;
+      flex-direction: column;
+      border-radius: 7px;
+      background-color: rgba($color: #222222, $alpha: 0.6);
+    }
+
+    form {
+      padding: 5% 5% 5% 5%;
+      margin-bottom: 4%;
+      input {
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding-left: 6px;
+        &:focus {
+          outline: none;
+          border-radius: 10px;
+          border: 2px solid purple;
+        }
+        &.wrong {
+          color: rgb(255, 100, 73);
+          border-color: rgb(255, 100, 73);
+        }
+      }
+      input:first-of-type {
+        margin-bottom: 10%;
+      }
+      p {
+        margin: 4px 0 8% 0;
+        align-self: flex-end;
+      }
+    }
+    .noAccount {
+      padding: 5%;
+      p {
+        margin-top: 5%;
+        align-self: center;
+      }
+    }
+    button {
+      outline: none;
+      width: 75%;
+      height: 50px;
+      align-self: center;
+      color: white;
+      background-color: $mainColor;
+      padding: 5px 0px;
+      border: 0px;
+      border-radius: 18px;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: white;
+      color: $mainColor;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 3%;
+    }
+    h3 {
+      margin-bottom: 3%;
+      font-size: 1.7em;
+    }
+    p {
+      font-size: 1em;
+      text-decoration: none;
+    }
+    .discover {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+    a {
+      text-decoration: none;
+    }
+    .discover:visited {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

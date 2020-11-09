@@ -1,0 +1,120 @@
+@import "./variables";
+#MenuBurger {
+  display: none;
+}
+.bm-burger-button {
+  display: none;
+}
+
+@media screen and (max-width: 740px), (max-device-width: 740px) {
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 80px !important;
+    width: 80px !important;
+    right: 15px !important;
+    top: 15px !important;
+    .bm-cross {
+      height: 50px !important;
+      right: 40px !important;
+    }
+  }
+
+  #MenuBurger {
+    display: unset;
+  }
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 5vh;
+    height: 4vh;
+    right: 1.5vh;
+    top: 2vh;
+  }
+  .bm-burger-button {
+    display: unset;
+  }
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    width: 100%;
+    top: 8vh;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    width: 100%;
+
+    /* Wrapper for item list */
+    .bm-item-list {
+      margin-top: 30px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #b8b7ad;
+      padding: 0.8em;
+      width: 100%;
+    }
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Individual item */
+  .bm-item {
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      height: 60px;
+    }
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .main-NavBar {
+    ul {
+      li {
+        margin-right: 0px;
+        a {
+          color: white;
+          &::after {
+            height: 0px;
+          }
+        }
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
